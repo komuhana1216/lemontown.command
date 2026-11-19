@@ -4,10 +4,10 @@ import {getFirestore,collection,doc,getDoc,onSnapshot,addDoc,updateDoc,deleteDoc
 
 // Firebase コンソール > プロジェクトの設定 > ウェブアプリ からコピーして置き換えてください。
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  appId: 'YOUR_APP_ID'
+  apiKey: 'AIzaSyAFT-Bn6dYp4k7HCXJFcSEAzk8ebjQpwXA',
+  authDomain: 'fivem-command-list.firebaseapp.com',
+  projectId: 'fivem-command-list',
+  appId: '1:837267702495:web:9f1ac99b873e93bd96df6a'
 };
 const $=id=>document.getElementById(id);
 const categories=['一般','PD','EMS','犯罪系','Admin'];
