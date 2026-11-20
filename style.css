@@ -1,1 +1,46 @@
 :root{font-family:system-ui,-apple-system,sans-serif;color:#eaf0fa;background:#0a101b}*{box-sizing:border-box}body{margin:0}header{padding:26px max(18px,calc((100vw - 1050px)/2));background:#101a2a;border-bottom:1px solid #26344a}h1{margin:0;font-size:26px}header p,.muted{color:#9bacbf}main{max-width:1050px;margin:28px auto;padding:0 18px}.panel{background:#121e30;border:1px solid #293950;border-radius:14px;padding:20px;margin:18px 0}input,select,textarea{width:100%;background:#0b1422;color:#fff;border:1px solid #34445b;border-radius:8px;padding:11px;font:inherit}textarea{min-height:95px}label{display:block;margin:12px 0 5px;color:#bbcadb}button,.button{display:inline-block;background:#2878d0;color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer;text-decoration:none;font:inherit}button.secondary,.button.secondary{background:#273a53}button.danger{background:#9d3744}button:disabled{opacity:.5;cursor:not-allowed}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.tabs button.active{background:#2878d0}.tabs button{background:#26364d}table{width:100%;border-collapse:collapse}th,td{padding:13px 9px;text-align:left;border-bottom:1px solid #2b3c52;vertical-align:top}th{color:#9eb1c9}code{color:#91c6ff;overflow-wrap:anywhere}.scroll{overflow-x:auto}.status{min-height:24px;color:#a9d2ff}.hidden{display:none!important}.actions{display:flex;gap:6px;flex-wrap:wrap}@media(max-width:650px){h1{font-size:21px}th,td{font-size:13px;padding:9px 5px}}
+
+/* ヘッダーのレイアウト */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* ロゴ画像 */
+.header-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* タイトル */
+.header-text {
+  text-align: left;
+}
+
+.header-text h1 {
+  margin: 0;
+}
+
+.header-text p {
+  margin: 6px 0 0;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .header-content {
+    gap: 10px;
+  }
+
+  .header-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+}
